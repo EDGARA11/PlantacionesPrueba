@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://localhost:44396/Logistica/RecepcionFruta -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="stylesheet" href="./Plantaciones del Norte_files/dash.css">
+    <link rel="stylesheet" href="./Plantaciones del Norte_files/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Plantaciones del Norte_files/css2" rel="stylesheet">
+    <link href="./Plantaciones del Norte_files/css2(1)" rel="stylesheet">
+    <title>Plantaciones del Norte</title>
+    <style>
+        .sinSubrayado{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="menu-section">
+            <div class="menu-title"><a class="sinSubrayado" href="https://localhost:44396/Default.aspx"><i class="fa fa-home" aria-hidden="true"></i><span>Inicio</span></a></div>
+        </div>
+        <button class="sidebar-toggle" aria-label="Toggle Sidebar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <div class="menu-section">
+            <div class="menu-title"><i class="fa fa-cubes" aria-hidden="true"></i><span>&nbsp;Compra de Frutas</span></div>
+            <div class="menu-item active"><a class="sinSubrayado" href="https://localhost:44396/Logistica/RecepcionFruta.aspx"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Recepción</span></a></div>
+            <div class="menu-item"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Detalle de recepción</span></div>
+        </div>
+        <div class="menu-section">
+            <div class="menu-title"><i class="fa fa-briefcase" aria-hidden="true"></i><span>&nbsp;Exportación</span></div>
+            <div class="menu-item"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Armar Pallets</span> </div>
+            <div class="menu-item"><i class="fa fa-copyright" aria-hidden="true"></i><span></span>&nbsp;Asignar Contenedor</div>
+        </div>
+        <div class="menu-section">
+            <div class="menu-title"><a class="sinSubrayado" href="https://localhost:44396/LoginUser.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Cerrar Sesión</span></a></div>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="main-content-header">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+        </div>
+
+
+        
+
+    <script type="text/javascript">
+        $(function () {
+            var tabName = $("[id*=TabName]").val() != "" ? $("[id*=TabName]").val() : "personal";
+            new bootstrap.Tab($('#Tabs button[data-bs-target="#' + tabName + '"]')).show();
+            $("#Tabs button").click(function () {
+                $("[id*=TabName]").val($(this).attr("data-bs-target").replace("#", ""));
+            });
+        });
+    </script>
+
+    <form method="post" action="https://localhost:44396/Logistica/RecepcionFruta" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Plantaciones del Norte_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Plantaciones del Norte_files/MicrosoftAjax.js.descargar" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de trabajo de cliente ASP.NET Ajax.');
+//]]>
+</script>
+
+<script src="./Plantaciones del Norte_files/MicrosoftAjaxWebForms.js.descargar" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F56539D4">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="KT4/KPaNTCtzXZRuxFrOxRhys7OiVZjrmHZ5ApK0vrUcQsriDHjPzNiaAVwH+nvMDbxX9BlFAaDItq2UL/QANbhyU86OeroZ5VUtcVD3lC4amGbRGW3tV1e75WKKIGmF9NB+yYbcTEkXzrvR/oLGgOxD++3cv3wGhQ/Dpx3gyv6LNot1+cOFdw2sjnvtJtnRjG1HZDk/yKUelI9e5Gs9ScBJu502L7K/3dVZ5zODlSxZH8vFR7hY452qMHXxq/N1ptxKioqDItz90SE0lWizPsXaPb8uaICfcj+luZwPfteqSuTtClFHCbYvoCU5qGn6xpyglh1u/Nit8/5eGEpao4M3R6xRAT3xPluR5G5NfXKXrOMbry/Tj/XGPepHrNePJMs+RCQFFggH17Re4k2AwZj+nEGnjTHMIB0Uty6KDiAeW2p2G7+PZYLaJNe5inEHtg3OXKH9GdtFHDRkGuThAGQ+Q59mILA3AGljKE0cLg7vKaQp7+X2rd4JXQ7x7gJJ9LBNTqnbXknA+SsfWy6Pqp3VRhIvRphkgdBgJR6XNn2oe/ADpoDT6taCXQJ+lCj3BleSzvarkp0tjs7ei1IR01IuQgOdjmGqBEElVyMK1fjmC3rufh2OBR6eADQiQ7MIIhDosBwJmbYefUTBoI7m7GZmG67OAGKq3Tyus6sECdqrsUUP3hGQDYqdT54zNw8oP8JAIVCPi0JEzLp3SboKQL/Kr0rcjz/Hu/TkeGCJZTJYIVH03XErNSnTqkrfLRUvAFghdAewvzglgp8WnlLJAWxuatBl9/cX0BmHYYHjXeZBd2d85cKTzYjM4j0STy76sjo4YWime4H6FN8SrTX4Osq8npRopq61a9Ua2Vyev4Uai1d7msv7rvCi4xxQ/5excez2MGLVlOTHRn13DoTenxUUUqPBRIEtjrg/2UR9TVc7AWVBcfLNI+eRKYYVl/dlpJ8QaXRwxlFwpLpFH2UUuvhINwMGA5U7/+uyLFnGZ/uqaMaM1/CDQaHEetb24nrnp17WGQbcX43/6ofG3JyehpEJmruoY9CRjut9wD9ZtvjmzqbaxmYDuETi8CS17ZLpFDn4UJ5GnZVElk15XEntcY0yVB9dS0gp9kYKZ4S5E5Oc62qBDB1fJMKIwLaLC+dFd3bHmiu/b86+1JXrLXKBANgfsaS5T/n7p/ckB+S2DpjQafKNMsypIJh0AgvFsM9WvQFWLJWVrrJ4OhWJlsVmMk5bhQgq481mElCeyOM6Rvs2q004FmXVVIWAam2/RxHbotuQHL9Z8Kp7Y2+8bz4OqFYAcP6p/jN53KcvOM2bFjKHKWHAFl8UBdDpoKYjHGetqAZ77KnVoRX1lh99M+CeGUY7Ka3f4xdt1xqrC3yTJJTmsXhLjKbRiBWsmOVeJshz9D/gWcM5t0ms9YjIIw7/ftmbgAtAH8TtIa3XS4A4rU3+S5lOsN2mZ4fxUCF9wIG2kdLbBb3rEDG5GeyO+WWhSg==">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <div class="header">
+            <div>
+                <div>compra de frutas</div>
+                <h1 class="title source-sans-3-700">Recepcion de fruta</h1>
+            </div>
+            <div class="date">
+                <div id="MainContent_divSemana">semana: 35</div>
+                <div id="MainContent_divFecha">Martes, 27 del 2024</div>
+            </div>
+        </div>
+
+        <div class="main-content-form">
+
+            <div class="form-container">
+
+                <div class="form-group">
+                    <label for="campus">Campus</label>
+                    <select name="ctl00$MainContent$ddlCampus" id="MainContent_ddlCampus" disabled="disabled" class="aspNetDisabled">
+	<option value="0">Seleccione Campus</option>
+	<option value="001">HACIENDA MOTA                 </option>
+	<option value="005">HACIENDA BILLY                </option>
+	<option selected="selected" value="006">ADMINISTRACIÓN CENTRAL        </option>
+	<option value="007">DEPARTAMENTO DE INGENIERIA    </option>
+	<option value="012">*ADMINISTRACIÓN SEGUROS       </option>
+
+</select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input name="ctl00$MainContent$txtFechaRegistro" type="date" value="2024-08-27" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtFechaRegistro\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="MainContent_txtFechaRegistro" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="recepcion" class="recepcion-number source-sans-3-700">Recepcion# 0000001</label>
+                </div>
+                <div class="form-group">
+                    <label for="centro">Centro de Acopio</label>
+                    <select name="ctl00$MainContent$ddlCentroAcopio" id="MainContent_ddlCentroAcopio" class="form-control">
+	<option value="0">Seleccione Centro de Acopio</option>
+	<option selected="selected" value="001">Centro Acopio PDN MAO </option>
+	<option value="002">Centro Acopio PDN MANZANILLO </option>
+
+</select>
+                </div>
+                <div class="form-group">
+                    <label for="productor">Productor</label>
+                    <select name="ctl00$MainContent$ddlProductores" id="MainContent_ddlProductores" class="form-control">
+	<option value="0">Seleccione Productor</option>
+	<option selected="selected" value="00022">JUAN RAFAEL  MINIER MENA</option>
+	<option value="00068">FINCA BILLY</option>
+	<option value="00070">FINCA FERNANDEZ</option>
+	<option value="00071">FINCA MOTA</option>
+	<option value="00072">FINCA YAQUE</option>
+	<option value="00077">BANELINO S,A,</option>
+	<option value="00174">JUAN CARLOS FILPO CASTILLO</option>
+	<option value="01184">HAROLD ROBLES</option>
+	<option value="01223">GRUPO BANAMIEL, S.A.S.</option>
+	<option value="01273">ASOCIACION DE PRODUCTORES DE BANANOS LAS MERCEDES, Inc.</option>
+	<option value="01420">FINCA LIMONES</option>
+	<option value="01487">ASOBANU, S.A</option>
+	<option value="01691">MANUEL ANDRES PEREZ VASQUEZ</option>
+	<option value="01799">ASOCIACION  AGRICOLA NOROESTANA  INC (ASOANOR)</option>
+	<option value="01854">ASOC. DE PRODUCTORES EXPORTADORES DE BANANO DE MONTECRISTI</option>
+	<option value="01855">PLANTACIONES AGRICOLAS MANZANILLO S.R.L.</option>
+	<option value="02187">JOSE DOLORES TAVAREZ TAVAREZ</option>
+	<option value="02244">KELLISA II S A</option>
+	<option value="02252">BANANOSA, S.A.</option>
+	<option value="02326">ASOCIACION DE PRODUCTORES DE FRUTAS DEL NOROESTE INC</option>
+	<option value="02387">ED &amp; RAC PRODUCCIONES BANANERAS, SRL</option>
+	<option value="02434">Hispaniola Fresh Fruit Co. S.A.</option>
+	<option value="02663">ASOCIACION DE BANANEROS DE GUATAPANAL (ASOBAGUA)</option>
+	<option value="02962">Global Banana Fruit, S.R.L.</option>
+	<option value="02997">ASOCIACION AGRICOLA MONTE DE SION, INC</option>
+	<option value="03044">ASOCIACION DE PRODUCTORES AGRICOLAS ABRAHAM RODRIGUEZ, Inc.</option>
+	<option value="03048">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</option>
+	<option value="03054">APROBAPAVER</option>
+	<option value="03110">Filpo Agroindustrial SRL</option>
+	<option value="03142">Asociación de productores Agrícolas Colibrí (APROACO).</option>
+	<option value="03144">Cooperativa Agropecuaria de los empleados de Ekoban, Inc.</option>
+	<option value="03146">AMERICO AUGUSTO RODRIGUEZ RODRIGUEZ</option>
+	<option value="03152">COOPERATIVA AGROPECUARIA Y DE SERVICIOS MULTIPLES DE BANANEROS DOMINICANOS</option>
+	<option value="03153">Asociacion de Agricultores Ramon Antonio Cruz, Inc.</option>
+	<option value="03154">ALBA YUDI SANCHEZ ESPINAL</option>
+	<option value="03157">DOLORES NEREIDA ALFAU</option>
+	<option value="03160">PLANTACIONES JORGE SRL</option>
+	<option value="03161">Finca La Bendicion De Dios</option>
+	<option value="03162">ASOCIACION DE PRODUCTORES BANANOS DEL YAQUE</option>
+	<option value="03164">JULITA BEATRIZ COMA MINGUEZ</option>
+	<option value="03166">Christian Gonell Cruz</option>
+	<option value="03167">PROYECTO BANANERO DEL NOROESTE PROBANOR SRL</option>
+	<option value="03168">ASOCIACION DE PEQUEÑOS PRODUCTORES LA SANTA CRUZ, INC</option>
+	<option value="03174">AGROPECUARIA LA VIGIA SRL</option>
+	<option value="03179">SIANFFREY CRUZ CEBALLO-HACIENDA CRUZ AGROINDUSTRIAL</option>
+	<option value="03188">PORFIRIO DE JESUS ACOSTA GIL</option>
+	<option value="03189">ASOCIACION AGRICOLA BANANA DULCE, INC</option>
+	<option value="03190">LIMONES BIOLOGICOS DE SOSA SRL</option>
+	<option value="03193">FERNANDO ANTONIO ESTEVEZ ESTEVEZ</option>
+	<option value="03195">Asociacion de Productores y Exportadores Agroecologicos</option>
+	<option value="03196">ASOCIACION DE BANANEROS DE LA LINEA, INC.</option>
+
+</select>
+                </div>
+                <div class="form-group">
+                    <label>Guía</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input name="ctl00$MainContent$txtEstab" type="text" id="MainContent_txtEstab" placeholder="000" style="width: 33%;">
+                        <input name="ctl00$MainContent$txtEmision" type="text" id="MainContent_txtEmision" placeholder="000" style="width: 33%;">
+                        <input name="ctl00$MainContent$txtSecuencial" type="text" id="MainContent_txtSecuencial" placeholder="000" style="width: 33%;">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tabs">
+                <div class="tab active">Cajas</div>
+                <div class="tab">Palets</div>
+            </div>
+
+            <div class="container-table">
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>semana</th>
+                                <th>hacienda</th>
+                                <th>puerto</th>
+                                <th>marca</th>
+                                <th>cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Title</td>
+                                <td>Title</td>
+                                <td>Title</td>
+                                <td>Title</td>
+                                <td>Title</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                <div>
+
+</div>
+
+            </div>
+
+            <div>
+                <div class="content-message">
+                    <div class="success-message">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>se guardó el registro con éxito
+					
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="button button-primary">guardar</button>
+                    <button type="button" class="button button-secondary">cancelar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+
+
+    </main>
+
+    <script>
+        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+        });
+    </script>
+
+
+<webchatgpt-custom-element-200caeb6-33de-4891-a575-859947957195 id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-200caeb6-33de-4891-a575-859947957195></body></html>
