@@ -45,9 +45,32 @@
 
     <main class="main-content">
 
+        
         <div class="main-content-header">
-            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <div class="user-menu">
+                <div class="user-icon" id="userMenuToggle" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <img src="./Plantaciones del Norte_files/chevron-down.svg">
+                </div>
+                <div class="popup-menu" id="popupMenu" role="menu">
+                    <div class="user-info">
+                        <div class="user-name">Michael Jiménez</div>
+                        <div class="user-role">Administrador</div>
+                    </div>
+                    <ul class="menu-options">
+                        <li role="menuitem">
+                            <span class="menu-icon">€</span>
+                            menu option 1
+                        </li>
+                        <li role="menuitem">
+                            <span class="menu-icon">€</span>
+                            menu option 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
 
 
         
@@ -67,7 +90,7 @@
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ULuHDHstoIG4s5CEydkh63b0sOZx6bOtwySd4xgivFG0H1umdVBhfo2s6o7k9ArWdhKWIkQgyny6LBCsj0q2ZhpuE9GUhQ9bEoOfsGuR+VEakk3YiOhEpDLW5tyWDb2iPM+aJizlEm4aU9Fd2CDf2LGjKOTaVw8SvRXGDSg/l2SQrYLu3HLoNzMdg4S1FsCrQt667Eb/sfXNedUVlR1sfA/ndHcG0f9TsZZ1YdxdezBRIe2AhJ6co0wA2R1MwayRtCENcYwDYT8JH4W3j+4snfqUYDH/yKM3Yu9Ujy2S4GioPzZrsohEQVJK7bm4zxu/U/m1g6jj2UACJ4GohazvYga+HgQWzbBdHO5d3HYesb4Ikz2TeApnruNM2qJfIud0d7fevQmSGte4iZKxP+LJuC4hz7daZHOpaA4C7Ld/MUT/KKhMQS9ebjZxDMJNRSYwaQ9R9YNOq6ytXn3Il3nRQ3SqnQ45RMsyJsk7k16r0pVUC05Z2/Cty1MXbugvPUK+zEzFlnYisnrdQ/qTlTY+Q3B+zySw7GysI2pUZFKE2Goh33XhVzdjdA7UCdMk9e1IlsNxwJbgd+fpHngNYrydJ5HXw37PPtRHPuX7qIIWfJJveau3c4S6eXXNW1qHJW6USmyoV3lon5rzQyzPyxKeLwQ4fZwU+pCgWw5tGKK9E7zOwPb+OmTJH7TwYCbq/uGe3a07MRU5O4aI0eDmBHYW2pdGlX18dVD/JSGcE66qitu4HR/phxogiUR7Gavdv153qgXjzSAkBoVsYTSiienz8uVcBH0GMxJ9niEEMfdEbMjI4BwoLj0+wP75kSibsctuof+3YO6GrkrK6JOTPywp3XokY/FgEKSWUgNq/a31L9tLTk+AWtiT9QREv1rATZ9Ilms2krtLiyZnDVbtumCc1ru+cjvMG6WGmkEDi5qpg5syDZajaI7mvbR3/Mo15QJWX6DqTJSozP8Gc1laKCQRD8iG49UXy4D8H4u18wkIxjIU+xmzALdH7s5mvRMDg81vkesLr8ahK+ApzSZ1O5a+QAO7B3KEuzqWZv9Uokv3sFtGxs0JpEWd8F938od8ilWtA6qyiuzC/wWx+YDNZsI7NiIxAYpoKDUrP4AdeA8WLFnUGlTtYCrB3jfY5QZpDQ86CtJGz9KC/nrXxGjpbqY7RZeT5eqI/hI9Qkr60Ncaq0VaBsidEXbkkfCRlB+NDB+nd6f0tdFVW3v6SvKPZX/qVfCzJD+C1M6I5bBOr2KDFs5eS2tqc184/ZB9TrqeCN6cgX9L4s5hOWn/Fn4ilcYxuAyUcQrXJzcikn0TC3yzKa4cI4j0ywRv8v4few6rtnT3x1euYgKMgloK9/IsTQJaOwd/OPD6+D0xXQWGSEGmt2Xyp9KtP+X3bxuHRdjPqbh6mI3KJNxhhgYtUYrFI2xvBuKQd57w7mjUVle6rM1hjuQ3QhgBRxlwtSPXBpMv5JiOQ1rohYdXkdZNJHp0zYco/kFvZK6baZI6bQZPMbqD1zAHa8JQ3M0bEDIorp2ILs4vCoqi++1BZw+F61aEuwRjdwLjUNuFSLgeqRPftHCjkxr7w1rgHQdoZgTDxZv0mHW69Qz9LtrRFZvhRAM+FXr5wacDFnYDbbWvLXUCOcEHlIU3lQSVeBJg8+9QiOaGnLHKz95FtbCGz3rpM1UR+0GysDseNHa22sbwZIlYXkimKHsEUClv/GRbSFtrqsgf/HkFiGViMwHJc7eAK//SILCFFMQ63s+zh7zmTAsOriyKU5hrMldB3l0kiQ+OkLdn+kOsPLrGL46H/tTpFyPOBcqDkvvUQnqd5E/L0dqvv6U5WO8hsZolDTX0SelgykJbu1dYQcwtWtOEpw5O/jWOg9RKQRq+UkqzsvfEmLi+vDJRRhy9+SLY1gAXv2TpR/SHMuaNnf+nIbVb0BDkjvQkYTkgUwMv6Y+6xZvzdFuMMt6e1WYOOcTnRPjNQOPAP64NHFRQ4sAspbMwYzx6qeouGz5DvXZ7C5VKmdEpSCsWss5yIetjp63IZhvhEFS+dsjGYe8EAZ7ysQIkfsMROQXgOsuQnb9A5r6oCEAg7gU3bVRFRqrvZ+b7lxxTdiH6Y5Sc8qjTLTRAYeDBgiSdKYPecmN0JiWAfDyikxedhk3H4kk3ZgyyUEC17l4aI0IUcVI9HNnNFjAOrdZWexiFrQEZme0HOBdJxjY/0z+wd07QAovyvg8XPL0rXWH07u5Q64o50ZmtmV9cXn7woVNY9FzgI+uADRYtXs3zrf1PR0WkVJyXPDv0UXuiM0pTKU+FnmhtJ3B7QnmFAH42bc6p/jSRGliodghJP/39T/Mx01rTdzfscRV4lqBWv95CWvOvWW59uORdZhqcZNS32Q7EbvwRffLd7QmN8oiv4fmCASfPie9xV5NtwqnBGGcFa7jQSGa5r4nm7wVsAUyHMJXmhq/6YfVQS1qTPKKYHAyBdjNXQIWgKLO0/CVHTtSM0RH5gKZxx9k1/NMxbmQmj4XB/4RzozpwROvwP8ZRv4mhihnnA0FZq/Zr6PUUtF9JSK8YwaZLjx+qXU+jM5FWTsP9KFKk4D85UjchhgBgv8krY4lAzO04G06GCGdQtwdKm3/2Q+cubpZ/FHYEkJT+VPbfemSOZdH7wApEaOMX4EK3fkpEeHl6dxNA8l369YmAiFimRwFIA26VyG/wv+ZdbyVmPDqnF6ZDqORC+N4bYeJfX+HXn1QOVBX6l+f5Kwggck1bWfeZ1VhgNIcKuzvXi4iJ3WHoxi39aWQsHc26/lY83paQnGHl8YegQLD21ezip+YXhTEoZaKcGoVLwd9PMF/1uFlY8EW4bAO3/XuzeKce6GK1bVy4bN8yqWxo9a4LrFyM3Uda7s/alkBGvm9p4q5m9mi8AGFbcglYiV6/Kj8Ma+1W38i9jwRBQdLx6qAP18jdK6qO9B2HDTkAOUutVJa+oRMQK11buuUKbehzBbOsZAydmdhNNhREKKXSdhYI0/L0V0J4kUgecSKkX15x2p76hwn+m6k2ncZAyaC6XRkHr2UzRkfPIQJG/MH26TsN6MaAe+rxxRD1Tv9I8mCKPNvjzSz9HrIFZ3EoGMT/RS3EgPn/gxLnTvBCcFSLbMdkoroRHbSo+ldBv0WmMg1/EK2TitXYpT3vuxlMtw1SSo/O72vFHqiECtzmdNr4rEPBjNIQ9xmsSVWMYj+Ee49HrB4cDvhqE/Nx4xK1XmNHPynajMRB3fEC0wU9J0KYb1ssbOvDRVQFbJxE+g8c6ZJBCh1k8FVOJ90rapKaulnepMotJHv7A9N8IJ/Lxfft2nioiqnA8yQvDlUKOXF/3T5VwItst7OYiSbNjNBzZhCt3loMPGT6mI5lndoNLKrZ9RXutxFhyenb7d3Bf2HC6lo9YrbgVfLWenOuS6IxbtHumF7KpiRpEu9mgU6Tv2grZidsNg2Tx1XGb8ECnJhU1gQ1SnxjcmhTfOMVGkoBotrWOg7xKnzTDwMM7ffK+7WMmKr8sv5xdqKy6vAD3jxiqwRuNF12TzPPERceQ78aXtB80ty6nn4WLDzc2ynqCrzU+v4WYJv8Mix/x9Qan7Ft5McBIoeKqlO1TxdjVUGyjVHAu4hqJfpi+lVOctnqFNSFLZov/TD7IcI7f/w5X2eAateQC8s367dyIWJGzTdYRH6qDH8dQn+Gx9YR5X31jFowsCJIUTP13DQo0caeil+NKx2JiucSwT15Rmx/EIJ08jFBAfXlZocdaS05v518Vda0nZXFlfKaCmBcnLcUSBL36bXvcm0rPly3dz+Z3Q==">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
 </div>
 
 <script type="text/javascript">
@@ -102,7 +125,7 @@ if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de tr
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F56539D4">
 	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="KT4/KPaNTCtzXZRuxFrOxRhys7OiVZjrmHZ5ApK0vrUcQsriDHjPzNiaAVwH+nvMDbxX9BlFAaDItq2UL/QANbhyU86OeroZ5VUtcVD3lC4amGbRGW3tV1e75WKKIGmF9NB+yYbcTEkXzrvR/oLGgOxD++3cv3wGhQ/Dpx3gyv6LNot1+cOFdw2sjnvtJtnRjG1HZDk/yKUelI9e5Gs9ScBJu502L7K/3dVZ5zODlSxZH8vFR7hY452qMHXxq/N1ptxKioqDItz90SE0lWizPsXaPb8uaICfcj+luZwPfteqSuTtClFHCbYvoCU5qGn6xpyglh1u/Nit8/5eGEpao4M3R6xRAT3xPluR5G5NfXKXrOMbry/Tj/XGPepHrNePJMs+RCQFFggH17Re4k2AwZj+nEGnjTHMIB0Uty6KDiAeW2p2G7+PZYLaJNe5inEHtg3OXKH9GdtFHDRkGuThAGQ+Q59mILA3AGljKE0cLg7vKaQp7+X2rd4JXQ7x7gJJ9LBNTqnbXknA+SsfWy6Pqp3VRhIvRphkgdBgJR6XNn2oe/ADpoDT6taCXQJ+lCj3BleSzvarkp0tjs7ei1IR01IuQgOdjmGqBEElVyMK1fjmC3rufh2OBR6eADQiQ7MIIhDosBwJmbYefUTBoI7m7GZmG67OAGKq3Tyus6sECdqrsUUP3hGQDYqdT54zNw8oP8JAIVCPi0JEzLp3SboKQL/Kr0rcjz/Hu/TkeGCJZTJYIVH03XErNSnTqkrfLRUvAFghdAewvzglgp8WnlLJAWxuatBl9/cX0BmHYYHjXeZBd2d85cKTzYjM4j0STy76sjo4YWime4H6FN8SrTX4Osq8npRopq61a9Ua2Vyev4Uai1d7msv7rvCi4xxQ/5excez2MGLVlOTHRn13DoTenxUUUqPBRIEtjrg/2UR9TVc7AWVBcfLNI+eRKYYVl/dlpJ8QaXRwxlFwpLpFH2UUuvhINwMGA5U7/+uyLFnGZ/uqaMaM1/CDQaHEetb24nrnp17WGQbcX43/6ofG3JyehpEJmruoY9CRjut9wD9ZtvjmzqbaxmYDuETi8CS17ZLpFDn4UJ5GnZVElk15XEntcY0yVB9dS0gp9kYKZ4S5E5Oc62qBDB1fJMKIwLaLC+dFd3bHmiu/b86+1JXrLXKBANgfsaS5T/n7p/ckB+S2DpjQafKNMsypIJh0AgvFsM9WvQFWLJWVrrJ4OhWJlsVmMk5bhQgq481mElCeyOM6Rvs2q004FmXVVIWAam2/RxHbotuQHL9Z8Kp7Y2+8bz4OqFYAcP6p/jN53KcvOM2bFjKHKWHAFl8UBdDpoKYjHGetqAZ77KnVoRX1lh99M+CeGUY7Ka3f4xdt1xqrC3yTJJTmsXhLjKbRiBWsmOVeJshz9D/gWcM5t0ms9YjIIw7/ftmbgAtAH8TtIa3XS4A4rU3+S5lOsN2mZ4fxUCF9wIG2kdLbBb3rEDG5GeyO+WWhSg==">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
 </div>
         <script type="text/javascript">
 //<![CDATA[
@@ -117,8 +140,8 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
                 <h1 class="title source-sans-3-700">Recepcion de fruta</h1>
             </div>
             <div class="date">
-                <div id="MainContent_divSemana">semana: 35</div>
-                <div id="MainContent_divFecha">Martes, 27 del 2024</div>
+                <div id="MainContent_divSemana">Semana: 35</div>
+                <div id="MainContent_divFecha">Miercoles, 28 del 2024</div>
             </div>
         </div>
 
@@ -140,7 +163,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
                 </div>
                 <div class="form-group">
                     <label for="fecha">Fecha</label>
-                    <input name="ctl00$MainContent$txtFechaRegistro" type="date" value="2024-08-27" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtFechaRegistro\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="MainContent_txtFechaRegistro" class="form-control">
+                    <input name="ctl00$MainContent$txtFechaRegistro" type="date" value="2024-08-28" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtFechaRegistro\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="MainContent_txtFechaRegistro" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="recepcion" class="recepcion-number source-sans-3-700">Recepcion# 0000001</label>
@@ -156,9 +179,9 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
                 </div>
                 <div class="form-group">
                     <label for="productor">Productor</label>
-                    <select name="ctl00$MainContent$ddlProductores" id="MainContent_ddlProductores" class="form-control">
+                    <select name="ctl00$MainContent$ddlProductores" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlProductores\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlProductores" class="form-control">
 	<option value="0">Seleccione Productor</option>
-	<option selected="selected" value="00022">JUAN RAFAEL  MINIER MENA</option>
+	<option value="00022">JUAN RAFAEL  MINIER MENA</option>
 	<option value="00068">FINCA BILLY</option>
 	<option value="00070">FINCA FERNANDEZ</option>
 	<option value="00071">FINCA MOTA</option>
@@ -172,7 +195,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
 	<option value="01487">ASOBANU, S.A</option>
 	<option value="01691">MANUEL ANDRES PEREZ VASQUEZ</option>
 	<option value="01799">ASOCIACION  AGRICOLA NOROESTANA  INC (ASOANOR)</option>
-	<option value="01854">ASOC. DE PRODUCTORES EXPORTADORES DE BANANO DE MONTECRISTI</option>
+	<option selected="selected" value="01854">ASOC. DE PRODUCTORES EXPORTADORES DE BANANO DE MONTECRISTI</option>
 	<option value="01855">PLANTACIONES AGRICOLAS MANZANILLO S.R.L.</option>
 	<option value="02187">JOSE DOLORES TAVAREZ TAVAREZ</option>
 	<option value="02244">KELLISA II S A</option>
@@ -229,31 +252,84 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
             </div>
 
             <div class="container-table">
-                
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>semana</th>
-                                <th>hacienda</th>
-                                <th>puerto</th>
-                                <th>marca</th>
-                                <th>cantidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Title</td>
-                                <td>Title</td>
-                                <td>Title</td>
-                                <td>Title</td>
-                                <td>Title</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                
-                <div>
 
+
+                <div>
+	<table cellspacing="0" rules="all" border="1" id="MainContent_gvPhoneBook" style="border-collapse:collapse;">
+		<tbody><tr>
+			<th scope="col">Semana</th><th scope="col">Hacienda</th><th scope="col">Marca</th><th scope="col">Puerto</th><th scope="col">Cantidad</th><th scope="col">Acciones</th>
+		</tr><tr>
+			<td align="center">
+                                <span id="MainContent_gvPhoneBook_lblSemana_0">35 - 2024</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfSecuencial" id="MainContent_gvPhoneBook_hdfSecuencial_0" value="1">
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblHacienda_0">5923 -ONELIS GIANCARLOS MARICHAL GENAO</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfHacienda" id="MainContent_gvPhoneBook_hdfHacienda_0" value="11731">
+                            </td><td>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfMarca" id="MainContent_gvPhoneBook_hdfMarca_0" value="006">
+                                <span id="MainContent_gvPhoneBook_lblMarca_0">03A</span>
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblPuerto_0">HELSINGBORG, SWEDEN</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfPuerto" id="MainContent_gvPhoneBook_hdfPuerto_0" value="047">
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblCantidad_0">21</span>
+                            </td><td>
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_0" class="button delete-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl02$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td align="center">
+                                <span id="MainContent_gvPhoneBook_lblSemana_1">35 - 2024</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfSecuencial" id="MainContent_gvPhoneBook_hdfSecuencial_1" value="2">
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblHacienda_1">5923 -ONELIS GIANCARLOS MARICHAL GENAO</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfHacienda" id="MainContent_gvPhoneBook_hdfHacienda_1" value="11731">
+                            </td><td>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfMarca" id="MainContent_gvPhoneBook_hdfMarca_1" value="036">
+                                <span id="MainContent_gvPhoneBook_lblMarca_1">03B-FT</span>
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblPuerto_1">HAMBURG</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfPuerto" id="MainContent_gvPhoneBook_hdfPuerto_1" value="026">
+                            </td><td>
+                                <span id="MainContent_gvPhoneBook_lblCantidad_1">37</span>
+                            </td><td>
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_1" class="button delete-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl03$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td>&nbsp;</td><td style="white-space:nowrap;">
+                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlHacienda" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$gvPhoneBook$ctl04$ddlHacienda\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_gvPhoneBook_ddlHacienda" class="form-control">
+				<option value="0">Seleccione Hacienda</option>
+				<option selected="selected" value="11731">5923 -ONELIS GIANCARLOS MARICHAL GENAO</option>
+
+			</select>
+                            </td><td>
+                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlMarca" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$gvPhoneBook$ctl04$ddlMarca\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_gvPhoneBook_ddlMarca" class="form-control">
+				<option value="0">Seleccione Marca</option>
+				<option selected="selected" value="276">03J</option>
+
+			</select>
+                            </td><td>
+                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlPuerto" id="MainContent_gvPhoneBook_ddlPuerto" class="form-control">
+				<option value="0">Seleccione Puerto</option>
+				<option value="049">AEROPUERTO JUAN SANTA MARIA</option>
+				<option value="012">ANTWERP</option>
+				<option value="060">DUBLIN</option>
+				<option value="026">HAMBURG</option>
+				<option value="047">HELSINGBORG, SWEDEN</option>
+				<option value="007">PORTSMOUTH</option>
+				<option value="002">PUERTO MANZANILLO</option>
+				<option value="048">ROTTERDAM</option>
+				<option value="054">VLISSINGEN, FLUSHING</option>
+
+			</select>
+                            </td><td>
+                                <input name="ctl00$MainContent$gvPhoneBook$ctl04$txtCantidad" type="number" id="MainContent_gvPhoneBook_txtCantidad" class="form-control">
+                            </td><td>
+                                <a id="MainContent_gvPhoneBook_lnkBtnAgregar" class="button button-primary update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl04$lnkBtnAgregar&#39;,&#39;&#39;)"><i class="fa fa-check" aria-hidden="true"></i></a>
+                            </td>
+		</tr>
+	</tbody></table>
 </div>
+
 
             </div>
 
@@ -285,4 +361,4 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
     </script>
 
 
-<webchatgpt-custom-element-200caeb6-33de-4891-a575-859947957195 id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-200caeb6-33de-4891-a575-859947957195></body></html>
+<webchatgpt-custom-element-6587800d-64ad-4c41-8c87-c458ac57dccd id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-6587800d-64ad-4c41-8c87-c458ac57dccd></body></html>
