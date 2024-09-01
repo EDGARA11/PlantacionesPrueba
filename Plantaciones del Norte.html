@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<!-- saved from url=(0048)https://localhost:44396/Logistica/RecepcionFruta -->
+<!-- saved from url=(0014)about:internet -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="stylesheet" href="./Plantaciones del Norte_files/dash.css">
     <link rel="stylesheet" href="./Plantaciones del Norte_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Plantaciones del Norte_files/table.css">
+    <script type="text/javascript" src="./Plantaciones del Norte_files/tablePallets.js.descargar"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="./Plantaciones del Norte_files/css2" rel="stylesheet">
     <link href="./Plantaciones del Norte_files/css2(1)" rel="stylesheet">
     <title>Plantaciones del Norte</title>
     <style>
-        .sinSubrayado{
+        .sinSubrayado {
             text-decoration: none;
             color: black;
         }
     </style>
 </head>
 <body>
-
+    <div class="backimage"></div>
     <aside class="sidebar">
         <div class="menu-section">
-            <div class="menu-title"><a class="sinSubrayado" href="https://localhost:44396/Default.aspx"><i class="fa fa-home" aria-hidden="true"></i><span>Inicio</span></a></div>
+            <div class="menu-title"><a class="sinSubrayado" href="http://190.166.90.34:82/Default.aspx"><i class="fa fa-home" aria-hidden="true"></i><span>Inicio</span></a></div>
         </div>
         <button class="sidebar-toggle" aria-label="Toggle Sidebar">
             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -29,8 +31,8 @@
         </button>
         <div class="menu-section">
             <div class="menu-title"><i class="fa fa-cubes" aria-hidden="true"></i><span>&nbsp;Compra de Frutas</span></div>
-            <div class="menu-item active"><a class="sinSubrayado" href="https://localhost:44396/Logistica/RecepcionFruta.aspx"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Recepción</span></a></div>
-            <div class="menu-item"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Detalle de recepción</span></div>
+            <div class="menu-item active"><a class="sinSubrayado" href="http://190.166.90.34:82/Logistica/RecepcionFruta.aspx"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Recepción</span></a></div>
+            <div class="menu-item"><a class="sinSubrayado" href="http://190.166.90.34:82/Logistica/RecepcionConsulta.aspx"><i class="fa fa-copyright" aria-hidden="true"></i><span>&nbsp;Detalle de recepción</span></a></div>
         </div>
         <div class="menu-section">
             <div class="menu-title"><i class="fa fa-briefcase" aria-hidden="true"></i><span>&nbsp;Exportación</span></div>
@@ -38,14 +40,14 @@
             <div class="menu-item"><i class="fa fa-copyright" aria-hidden="true"></i><span></span>&nbsp;Asignar Contenedor</div>
         </div>
         <div class="menu-section">
-            <div class="menu-title"><a class="sinSubrayado" href="https://localhost:44396/LoginUser.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Cerrar Sesión</span></a></div>
+            <div class="menu-title"><a class="sinSubrayado" href="http://190.166.90.34:82/LoginUser.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Cerrar Sesión</span></a></div>
         </div>
 
     </aside>
 
     <main class="main-content">
 
-        
+
         <div class="main-content-header">
             <div class="user-menu">
                 <div class="user-icon" id="userMenuToggle" aria-haspopup="true" aria-expanded="false">
@@ -54,23 +56,19 @@
                 </div>
                 <div class="popup-menu" id="popupMenu" role="menu">
                     <div class="user-info">
-                        <div class="user-name">Michael Jiménez</div>
-                        <div class="user-role">Administrador</div>
+                        <div id="DivUserName" class="user-name">Administrador Sistema</div>
+                        <div id="DivUserRole" class="user-role">Administrador</div>
                     </div>
                     <ul class="menu-options">
                         <li role="menuitem">
-                            <span class="menu-icon">€</span>
-                            menu option 1
+                            <a class="sinSubrayado" href="http://190.166.90.34:82/LoginUser.aspx"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Cerrar Sesión</span></a>
                         </li>
-                        <li role="menuitem">
-                            <span class="menu-icon">€</span>
-                            menu option 2
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </div>
-        
+
 
 
         
@@ -85,12 +83,11 @@
         });
     </script>
 
-    <form method="post" action="https://localhost:44396/Logistica/RecepcionFruta" id="ctl00">
+    <form method="post" action="http://190.166.90.34:82/Logistica/RecepcionConsulta" id="ctl00">
 <div class="aspNetHidden">
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
 </div>
 
 <script type="text/javascript">
@@ -114,18 +111,11 @@ function __doPostBack(eventTarget, eventArgument) {
 
 
 <script src="./Plantaciones del Norte_files/MicrosoftAjax.js.descargar" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-if (typeof(Sys) === 'undefined') throw new Error('Error al cargar el marco de trabajo de cliente ASP.NET Ajax.');
-//]]>
-</script>
-
 <script src="./Plantaciones del Norte_files/MicrosoftAjaxWebForms.js.descargar" type="text/javascript"></script>
 <div class="aspNetHidden">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F56539D4">
-	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4BC48E9C">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
 </div>
         <script type="text/javascript">
 //<![CDATA[
@@ -136,12 +126,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
 
         <div class="header">
             <div>
-                <div>compra de frutas</div>
-                <h1 class="title source-sans-3-700">Recepcion de fruta</h1>
+                <div>Compra de Frutas</div>
+                <h1 class="title source-sans-3-700">Consulta de Recepciones</h1>
             </div>
             <div class="date">
-                <div id="MainContent_divSemana">Semana: 35</div>
-                <div id="MainContent_divFecha">Miercoles, 28 del 2024</div>
+                <div id="MainContent_divSemana"></div>
+                <div id="MainContent_divFecha">Jueves, 12 del 2024</div>
             </div>
         </div>
 
@@ -150,181 +140,1114 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
             <div class="form-container">
 
                 <div class="form-group">
-                    <label for="campus">Campus</label>
-                    <select name="ctl00$MainContent$ddlCampus" id="MainContent_ddlCampus" disabled="disabled" class="aspNetDisabled">
-	<option value="0">Seleccione Campus</option>
-	<option value="001">HACIENDA MOTA                 </option>
-	<option value="005">HACIENDA BILLY                </option>
-	<option selected="selected" value="006">ADMINISTRACIÓN CENTRAL        </option>
-	<option value="007">DEPARTAMENTO DE INGENIERIA    </option>
-	<option value="012">*ADMINISTRACIÓN SEGUROS       </option>
+                    <label for="campus">Desde:</label>
+                    <input name="ctl00$MainContent$txtFechaDesde" type="date" value="2024-03-01" id="MainContent_txtFechaDesde" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Hasta:</label>
+                    <input name="ctl00$MainContent$txtFechaHasta" type="date" value="2024-03-01" id="MainContent_txtFechaHasta" class="form-control">
+                </div>
+                <div class="form-group">
+                    &nbsp;
+                </div>
+                <div class="form-group">
+                    <label for="centro">Criterio</label>
+                    <select name="ctl00$MainContent$ddlCriterio" id="MainContent_ddlCriterio" class="form-control">
 
 </select>
                 </div>
                 <div class="form-group">
-                    <label for="fecha">Fecha</label>
-                    <input name="ctl00$MainContent$txtFechaRegistro" type="date" value="2024-08-28" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtFechaRegistro\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="MainContent_txtFechaRegistro" class="form-control">
+                    &nbsp;
                 </div>
                 <div class="form-group">
-                    <label for="recepcion" class="recepcion-number source-sans-3-700">Recepcion# 0000001</label>
+                    &nbsp;
                 </div>
                 <div class="form-group">
-                    <label for="centro">Centro de Acopio</label>
-                    <select name="ctl00$MainContent$ddlCentroAcopio" id="MainContent_ddlCentroAcopio" class="form-control">
-	<option value="0">Seleccione Centro de Acopio</option>
-	<option selected="selected" value="001">Centro Acopio PDN MAO </option>
-	<option value="002">Centro Acopio PDN MANZANILLO </option>
+                    <label for="productor">Busqueda</label>
+                    <select name="ctl00$MainContent$ddlBusqueda" id="MainContent_ddlBusqueda" class="form-control">
 
 </select>
                 </div>
                 <div class="form-group">
-                    <label for="productor">Productor</label>
-                    <select name="ctl00$MainContent$ddlProductores" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlProductores\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlProductores" class="form-control">
-	<option value="0">Seleccione Productor</option>
-	<option value="00022">JUAN RAFAEL  MINIER MENA</option>
-	<option value="00068">FINCA BILLY</option>
-	<option value="00070">FINCA FERNANDEZ</option>
-	<option value="00071">FINCA MOTA</option>
-	<option value="00072">FINCA YAQUE</option>
-	<option value="00077">BANELINO S,A,</option>
-	<option value="00174">JUAN CARLOS FILPO CASTILLO</option>
-	<option value="01184">HAROLD ROBLES</option>
-	<option value="01223">GRUPO BANAMIEL, S.A.S.</option>
-	<option value="01273">ASOCIACION DE PRODUCTORES DE BANANOS LAS MERCEDES, Inc.</option>
-	<option value="01420">FINCA LIMONES</option>
-	<option value="01487">ASOBANU, S.A</option>
-	<option value="01691">MANUEL ANDRES PEREZ VASQUEZ</option>
-	<option value="01799">ASOCIACION  AGRICOLA NOROESTANA  INC (ASOANOR)</option>
-	<option selected="selected" value="01854">ASOC. DE PRODUCTORES EXPORTADORES DE BANANO DE MONTECRISTI</option>
-	<option value="01855">PLANTACIONES AGRICOLAS MANZANILLO S.R.L.</option>
-	<option value="02187">JOSE DOLORES TAVAREZ TAVAREZ</option>
-	<option value="02244">KELLISA II S A</option>
-	<option value="02252">BANANOSA, S.A.</option>
-	<option value="02326">ASOCIACION DE PRODUCTORES DE FRUTAS DEL NOROESTE INC</option>
-	<option value="02387">ED &amp; RAC PRODUCCIONES BANANERAS, SRL</option>
-	<option value="02434">Hispaniola Fresh Fruit Co. S.A.</option>
-	<option value="02663">ASOCIACION DE BANANEROS DE GUATAPANAL (ASOBAGUA)</option>
-	<option value="02962">Global Banana Fruit, S.R.L.</option>
-	<option value="02997">ASOCIACION AGRICOLA MONTE DE SION, INC</option>
-	<option value="03044">ASOCIACION DE PRODUCTORES AGRICOLAS ABRAHAM RODRIGUEZ, Inc.</option>
-	<option value="03048">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</option>
-	<option value="03054">APROBAPAVER</option>
-	<option value="03110">Filpo Agroindustrial SRL</option>
-	<option value="03142">Asociación de productores Agrícolas Colibrí (APROACO).</option>
-	<option value="03144">Cooperativa Agropecuaria de los empleados de Ekoban, Inc.</option>
-	<option value="03146">AMERICO AUGUSTO RODRIGUEZ RODRIGUEZ</option>
-	<option value="03152">COOPERATIVA AGROPECUARIA Y DE SERVICIOS MULTIPLES DE BANANEROS DOMINICANOS</option>
-	<option value="03153">Asociacion de Agricultores Ramon Antonio Cruz, Inc.</option>
-	<option value="03154">ALBA YUDI SANCHEZ ESPINAL</option>
-	<option value="03157">DOLORES NEREIDA ALFAU</option>
-	<option value="03160">PLANTACIONES JORGE SRL</option>
-	<option value="03161">Finca La Bendicion De Dios</option>
-	<option value="03162">ASOCIACION DE PRODUCTORES BANANOS DEL YAQUE</option>
-	<option value="03164">JULITA BEATRIZ COMA MINGUEZ</option>
-	<option value="03166">Christian Gonell Cruz</option>
-	<option value="03167">PROYECTO BANANERO DEL NOROESTE PROBANOR SRL</option>
-	<option value="03168">ASOCIACION DE PEQUEÑOS PRODUCTORES LA SANTA CRUZ, INC</option>
-	<option value="03174">AGROPECUARIA LA VIGIA SRL</option>
-	<option value="03179">SIANFFREY CRUZ CEBALLO-HACIENDA CRUZ AGROINDUSTRIAL</option>
-	<option value="03188">PORFIRIO DE JESUS ACOSTA GIL</option>
-	<option value="03189">ASOCIACION AGRICOLA BANANA DULCE, INC</option>
-	<option value="03190">LIMONES BIOLOGICOS DE SOSA SRL</option>
-	<option value="03193">FERNANDO ANTONIO ESTEVEZ ESTEVEZ</option>
-	<option value="03195">Asociacion de Productores y Exportadores Agroecologicos</option>
-	<option value="03196">ASOCIACION DE BANANEROS DE LA LINEA, INC.</option>
-
-</select>
+                    <label>Con el Texto:</label>
+                    <input name="ctl00$MainContent$txtTexto" type="text" id="MainContent_txtTexto" class="form-control" autocomplete="false">
                 </div>
                 <div class="form-group">
-                    <label>Guía</label>
-                    <div style="display: flex; gap: 10px;">
-                        <input name="ctl00$MainContent$txtEstab" type="text" id="MainContent_txtEstab" placeholder="000" style="width: 33%;">
-                        <input name="ctl00$MainContent$txtEmision" type="text" id="MainContent_txtEmision" placeholder="000" style="width: 33%;">
-                        <input name="ctl00$MainContent$txtSecuencial" type="text" id="MainContent_txtSecuencial" placeholder="000" style="width: 33%;">
-                    </div>
+                    <input type="submit" name="ctl00$MainContent$btnGuardar" value="Buscar" id="MainContent_btnGuardar" class="button button-primary">
                 </div>
-
-            </div>
-
-            <div class="tabs">
-                <div class="tab active">Cajas</div>
-                <div class="tab">Palets</div>
             </div>
 
             <div class="container-table">
 
 
                 <div>
-	<table cellspacing="0" rules="all" border="1" id="MainContent_gvPhoneBook" style="border-collapse:collapse;">
+	<table cellspacing="0" rules="all" border="1" id="MainContent_gvPhoneBook" style="border-collapse:collapse;border: white;">
 		<tbody><tr>
-			<th scope="col">Semana</th><th scope="col">Hacienda</th><th scope="col">Marca</th><th scope="col">Puerto</th><th scope="col">Cantidad</th><th scope="col">Acciones</th>
+			<th scope="col">Fecha</th><th scope="col">Recepción</th><th scope="col">Centro Acopio</th><th scope="col">Productor</th><th scope="col">Cantidad</th><th scope="col">Acciones</th>
 		</tr><tr>
-			<td align="center">
-                                <span id="MainContent_gvPhoneBook_lblSemana_0">35 - 2024</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfSecuencial" id="MainContent_gvPhoneBook_hdfSecuencial_0" value="1">
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblHacienda_0">5923 -ONELIS GIANCARLOS MARICHAL GENAO</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfHacienda" id="MainContent_gvPhoneBook_hdfHacienda_0" value="11731">
-                            </td><td>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfMarca" id="MainContent_gvPhoneBook_hdfMarca_0" value="006">
-                                <span id="MainContent_gvPhoneBook_lblMarca_0">03A</span>
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblPuerto_0">HELSINGBORG, SWEDEN</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdfPuerto" id="MainContent_gvPhoneBook_hdfPuerto_0" value="047">
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblCantidad_0">21</span>
-                            </td><td>
-                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_0" class="button delete-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl02$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_0">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_0">0000000004412</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl02$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_0" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_0">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_0">FINCA YAQUE</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_0">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_0" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl02$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                             </td>
 		</tr><tr>
-			<td align="center">
-                                <span id="MainContent_gvPhoneBook_lblSemana_1">35 - 2024</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfSecuencial" id="MainContent_gvPhoneBook_hdfSecuencial_1" value="2">
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblHacienda_1">5923 -ONELIS GIANCARLOS MARICHAL GENAO</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfHacienda" id="MainContent_gvPhoneBook_hdfHacienda_1" value="11731">
-                            </td><td>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfMarca" id="MainContent_gvPhoneBook_hdfMarca_1" value="036">
-                                <span id="MainContent_gvPhoneBook_lblMarca_1">03B-FT</span>
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblPuerto_1">HAMBURG</span>
-                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdfPuerto" id="MainContent_gvPhoneBook_hdfPuerto_1" value="026">
-                            </td><td>
-                                <span id="MainContent_gvPhoneBook_lblCantidad_1">37</span>
-                            </td><td>
-                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_1" class="button delete-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl03$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_1">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_1">0000000004318</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl03$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_1" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_1">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_1">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_1">60</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_1" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl03$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                             </td>
 		</tr><tr>
-			<td>&nbsp;</td><td style="white-space:nowrap;">
-                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlHacienda" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$gvPhoneBook$ctl04$ddlHacienda\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_gvPhoneBook_ddlHacienda" class="form-control">
-				<option value="0">Seleccione Hacienda</option>
-				<option selected="selected" value="11731">5923 -ONELIS GIANCARLOS MARICHAL GENAO</option>
-
-			</select>
-                            </td><td>
-                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlMarca" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$gvPhoneBook$ctl04$ddlMarca\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_gvPhoneBook_ddlMarca" class="form-control">
-				<option value="0">Seleccione Marca</option>
-				<option selected="selected" value="276">03J</option>
-
-			</select>
-                            </td><td>
-                                <select name="ctl00$MainContent$gvPhoneBook$ctl04$ddlPuerto" id="MainContent_gvPhoneBook_ddlPuerto" class="form-control">
-				<option value="0">Seleccione Puerto</option>
-				<option value="049">AEROPUERTO JUAN SANTA MARIA</option>
-				<option value="012">ANTWERP</option>
-				<option value="060">DUBLIN</option>
-				<option value="026">HAMBURG</option>
-				<option value="047">HELSINGBORG, SWEDEN</option>
-				<option value="007">PORTSMOUTH</option>
-				<option value="002">PUERTO MANZANILLO</option>
-				<option value="048">ROTTERDAM</option>
-				<option value="054">VLISSINGEN, FLUSHING</option>
-
-			</select>
-                            </td><td>
-                                <input name="ctl00$MainContent$gvPhoneBook$ctl04$txtCantidad" type="number" id="MainContent_gvPhoneBook_txtCantidad" class="form-control">
-                            </td><td>
-                                <a id="MainContent_gvPhoneBook_lnkBtnAgregar" class="button button-primary update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl04$lnkBtnAgregar&#39;,&#39;&#39;)"><i class="fa fa-check" aria-hidden="true"></i></a>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_2">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_2">0000000004317</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl04$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_2" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_2">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_2">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_2">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_2" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl04$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_3">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_3">0000000004316</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl05$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_3" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_3">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_3">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_3">240</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_3" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl05$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_4">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_4">0000000004315</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl06$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_4" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_4">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_4">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_4">700</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_4" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl06$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_5">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_5">0000000004314</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl07$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_5" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_5">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_5">Global Banana Fruit, S.R.L.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_5">350</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_5" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl07$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_6">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_6">0000000004313</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl08$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_6" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_6">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_6">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_6">108</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_6" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl08$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_7">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_7">0000000004312</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl09$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_7" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_7">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_7">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_7">700</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_7" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl09$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_8">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_8">0000000004311</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl10$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_8" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_8">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_8">Global Banana Fruit, S.R.L.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_8">220</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_8" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl10$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_9">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_9">0000000004310</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl11$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_9" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_9">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_9">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_9">288</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_9" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl11$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_10">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_10">0000000004309</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl12$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_10" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_10">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_10">FINCA MOTA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_10">165</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_10" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl12$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_11">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_11">0000000004308</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl13$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_11" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_11">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_11">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_11">165</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_11" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl13$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_12">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_12">0000000004306</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl14$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_12" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_12">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_12">ASOCIACION AGRICOLA MONTE DE SION, INC</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_12">162</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_12" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl14$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_13">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_13">0000000004304</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl15$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_13" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_13">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_13">Filpo Agroindustrial SRL</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_13">110</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_13" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl15$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_14">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_14">0000000004303</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl16$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_14" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_14">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_14"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_14">108</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_14" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl16$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_15">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_15">0000000004301</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl17$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_15" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_15">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_15">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_15">54</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_15" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl17$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_16">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_16">0000000004300</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl18$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_16" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_16">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_16"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_16">54</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_16" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl18$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_17">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_17">0000000004299</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl19$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_17" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_17">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_17">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_17">108</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_17" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl19$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_18">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_18">0000000004298</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl20$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_18" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_18">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_18">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_18">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_18" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl20$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_19">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_19">0000000004297</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl21$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_19" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_19">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_19">APROBAPAVER</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_19">54</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_19" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl21$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_20">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_20">0000000004296</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl22$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_20" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_20">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_20">APROBAPAVER</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_20">60</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_20" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl22$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_21">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_21">0000000004295</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl23$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_21" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_21">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_21">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_21">60</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_21" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl23$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_22">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_22">0000000004294</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl24$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_22" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_22">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_22"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_22">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_22" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl24$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_23">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_23">0000000004293</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl25$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_23" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_23">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_23"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_23">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_23" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl25$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_24">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_24">0000000004292</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl26$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_24" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_24">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_24"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_24">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_24" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl26$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_25">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_25">0000000004291</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl27$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_25" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_25">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_25"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_25">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_25" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl27$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_26">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_26">0000000004290</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl28$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_26" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_26">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_26">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_26">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_26" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl28$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_27">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_27">0000000004289</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl29$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_27" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_27">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_27">ASOCIACION DE PRODUCTORES DE BANANOS LAS MERCEDES, Inc.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_27">216</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_27" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl29$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_28">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_28">0000000004288</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl30$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_28" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_28">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_28">FINCA YAQUE</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_28">55</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_28" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl30$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_29">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_29">0000000004287</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl31$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_29" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_29">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_29"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_29">220</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_29" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl31$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_30">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_30">0000000004286</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl32$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_30" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_30">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_30"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_30">216</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_30" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl32$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_31">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_31">0000000004285</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl33$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_31" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_31">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_31">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_31">120</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_31" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl33$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_32">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_32">0000000004284</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl34$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_32" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_32">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_32">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_32">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_32" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl34$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_33">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_33">0000000004283</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl35$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_33" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_33">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_33">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_33">55</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_33" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl35$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_34">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_34">0000000004282</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl36$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_34" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_34">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_34">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_34">108</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_34" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl36$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_35">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_35">0000000004281</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl37$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_35" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_35">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_35">FINCA MOTA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_35">220</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_35" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl37$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_36">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_36">0000000004280</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl38$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_36" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_36">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_36">HAROLD ROBLES</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_36">300</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_36" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl38$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_37">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_37">0000000004279</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl39$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_37" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_37">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_37">PLANTACIONES AGRICOLAS MANZANILLO S.R.L.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_37">650</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_37" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl39$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_38">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_38">0000000004278</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl40$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_38" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_38">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_38">Global Banana Fruit, S.R.L.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_38">420</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_38" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl40$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_39">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_39">0000000004277</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl41$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_39" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_39">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_39">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_39">720</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_39" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl41$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_40">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_40">0000000004276</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl42$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_40" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_40">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_40">HAROLD ROBLES</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_40">96</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_40" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl42$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_41">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_41">0000000004275</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl43$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_41" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_41">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_41">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_41">432</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_41" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl43$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_42">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_42">0000000004274</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl44$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_42" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_42">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_42"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_42">240</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_42" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl44$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_43">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_43">0000000004273</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl45$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_43" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_43">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_43">FINCA BILLY</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_43">108</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_43" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl45$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_44">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_44">0000000004272</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl46$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_44" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_44">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_44">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_44">300</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_44" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl46$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_45">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_45">0000000004271</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl47$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_45" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_45">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_45">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_45">350</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_45" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl47$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_46">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_46">0000000004270</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl48$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_46" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_46">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_46">FINCA MOTA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_46">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_46" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl48$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_47">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_47">0000000004269</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl49$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_47" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_47">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_47">PLANTACIONES AGRICOLAS MANZANILLO S.R.L.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_47">144</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_47" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl49$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_48">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_48">0000000004268</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl50$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_48" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_48">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_48">FINCA YAQUE</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_48">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_48" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl50$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_49">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_49">0000000004267</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl51$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_49" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_49">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_49">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_49">162</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_49" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl51$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_50">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_50">0000000004266</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl52$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_50" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_50">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_50"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_50">110</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_50" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl52$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_51">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_51">0000000004265</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl53$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_51" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_51">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_51"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_51">216</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_51" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl53$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_52">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_52">0000000004264</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl54$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_52" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_52">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_52">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_52">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_52" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl54$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_53">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_53">0000000004263</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl55$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_53" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_53">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_53">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_53">96</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_53" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl55$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_54">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_54">0000000004262</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl56$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_54" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_54">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_54">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_54">50</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_54" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl56$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_55">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_55">0000000004261</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl57$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_55" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_55">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_55">BANELINO S,A,</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_55">150</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_55" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl57$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_56">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_56">0000000004260</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl58$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_56" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_56">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_56">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_56">240</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_56" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl58$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_57">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_57">0000000004259</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl59$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_57" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_57">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_57">FINCA MOTA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_57">240</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_57" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl59$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_58">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_58">0000000004258</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl60$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_58" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_58">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_58">HAROLD ROBLES</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_58">220</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_58" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl60$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_59">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_59">0000000004257</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl61$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_59" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_59">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_59">ED &amp; RAC PRODUCCIONES BANANERAS, SRL</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_59">120</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_59" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl61$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_60">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_60">0000000004256</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl62$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_60" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_60">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_60">ED &amp; RAC PRODUCCIONES BANANERAS, SRL</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_60">165</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_60" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl62$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_61">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_61">0000000004255</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl63$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_61" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_61">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_61">PLANTACIONES AGRICOLAS MANZANILLO, SRL-FINCA VILLA SINDA</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_61">450</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_61" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl63$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_62">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_62">0000000004254</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl64$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_62" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_62">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_62"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_62">275</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_62" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl64$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_63">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_63">0000000004251</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl65$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_63" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_63">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_63">Asociación de productores Agrícolas Colibrí (APROACO).</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_63">35</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_63" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl65$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_64">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_64">0000000004250</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl66$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_64" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_64">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_64"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_64">15</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_64" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl66$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_65">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_65">0000000004249</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl67$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_65" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_65">Centro Acopio PDN MAO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_65">ASOCIACION DE PRODUCTORES DE BANANOS LAS MERCEDES, Inc.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_65">48</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_65" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl67$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_66">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_66">0000000004247</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl68$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_66" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_66">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_66">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_66">162</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_66" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl68$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_67">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_67">0000000004246</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl69$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_67" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_67">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_67">ED &amp; RAC PRODUCCIONES BANANERAS, SRL</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_67">192</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_67" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl69$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_68">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_68">0000000004245</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl70$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_68" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_68">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_68">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_68">54</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_68" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl70$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_69">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_69">0000000004244</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl71$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_69" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_69">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_69"></span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_69">288</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_69" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl71$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                            </td>
+		</tr><tr>
+			<td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblFecha_70">01/03/2024</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblRecepcion_70">0000000004243</span>
+                                <input type="hidden" name="ctl00$MainContent$gvPhoneBook$ctl72$hdbAnio" id="MainContent_gvPhoneBook_hdbAnio_70" value="2024">
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblPuerto_70">Centro Acopio PDN MANZANILLO </span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblProductor_70">Hispaniola Fresh Fruit Co. S.A.</span>
+                            </td><td class="editable">
+                                <span id="MainContent_gvPhoneBook_lblCantidad_70">216</span>
+                            </td><td class="editable">
+                                <a id="MainContent_gvPhoneBook_lnkBtnEdit_70" class="button update-btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPhoneBook$ctl72$lnkBtnEdit&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                             </td>
 		</tr>
 	</tbody></table>
@@ -335,14 +1258,9 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
 
             <div>
                 <div class="content-message">
-                    <div class="success-message">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>se guardó el registro con éxito
-					
+                    <div id="MainContent_divMensaje" class="success-message" style="display: none;">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<span id="MainContent_lblMensaje">Se guardó el registro con éxito</span>
                     </div>
-                </div>
-                <div class="button-group">
-                    <button type="submit" class="button button-primary">guardar</button>
-                    <button type="button" class="button button-secondary">cancelar</button>
                 </div>
             </div>
 
@@ -358,7 +1276,27 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$MainContent$ctl01', 'ctl00', 
         document.querySelector('.sidebar-toggle').addEventListener('click', function () {
             document.querySelector('.sidebar').classList.toggle('collapsed');
         });
+
+        const userMenuToggle = document.getElementById('userMenuToggle');
+        const popupMenu = document.getElementById('popupMenu');
+
+        userMenuToggle.addEventListener('click', function () {
+            popupMenu.classList.toggle('show');
+            this.setAttribute('aria-expanded', popupMenu.classList.contains('show'));
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!userMenuToggle.contains(event.target) && !popupMenu.contains(event.target)) {
+                popupMenu.classList.remove('show');
+                userMenuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        document.querySelector('.sidebar-toggle').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+        });
+
     </script>
 
 
-<webchatgpt-custom-element-6587800d-64ad-4c41-8c87-c458ac57dccd id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-6587800d-64ad-4c41-8c87-c458ac57dccd></body></html>
+<webchatgpt-custom-element-1470fc2c-a1d4-45c8-a245-a0ee28b570be id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);"><template shadowrootmode="open"><style id="webchatgpt-snackbar-container-emotion-style"></style><div id="webchatgpt-snackbar-container" style="z-index: 2147483647;"></div></template></webchatgpt-custom-element-1470fc2c-a1d4-45c8-a245-a0ee28b570be></body></html>
